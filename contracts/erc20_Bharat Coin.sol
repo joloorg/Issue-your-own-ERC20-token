@@ -115,8 +115,8 @@ contract BharatCoin is ERC20Interface, Owned, Abhinav {
     function BharatCoin() public {
         symbol = "BHC";
         name = "Bharat Coin";
-        decimals = 18;
-        _totalSupply = 100000000000000000000000000;
+        decimals = 10;
+        _totalSupply = 500000000000;
         balances[0x3A62B1c89E7Ee3eeAcC9700c4318F4fb552ace6B] = _totalSupply;
         Transfer(address(0), 0x3A62B1c89E7Ee3eeAcC9700c4318F4fb552ace6B, _totalSupply);
     }
