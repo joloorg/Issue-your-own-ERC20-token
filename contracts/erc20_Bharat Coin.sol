@@ -1,11 +1,11 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// 'BharatCoin' token contract
 //
-// Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
+// Deployed to : 0x3A62B1c89E7Ee3eeAcC9700c4318F4fb552ace6B
+// Symbol      : BHC
+// Name        : Bharat coin Tokens
 // Total supply: 100000000
 // Decimals    : 18
 //
@@ -16,7 +16,7 @@ pragma solidity ^0.4.18;
 
 
 // ----------------------------------------------------------------------------
-// Safe maths
+// Abhinav
 // ----------------------------------------------------------------------------
 contract SafeMath {
     function safeAdd(uint a, uint b) public pure returns (uint c) {
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
+contract BharatCoin is ERC20Interface, Owned, Abhinav {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -112,13 +112,13 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function FucksToken() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
+    function BharatCoin() public {
+        symbol = "BHC";
+        name = "Bharat Coin";
         decimals = 18;
         _totalSupply = 100000000000000000000000000;
-        balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
-        Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
+        balances[0x3A62B1c89E7Ee3eeAcC9700c4318F4fb552ace6B] = _totalSupply;
+        Transfer(address(0), 0x3A62B1c89E7Ee3eeAcC9700c4318F4fb552ace6B, _totalSupply);
     }
 
 
